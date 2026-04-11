@@ -23,17 +23,22 @@ export interface Props {
 }
 
 const { event } = Astro.props as Props;
+const fallbackPosterUrl = "/events/event-placeholder.svg";
+const posterUrl = event?.eventPoster?.asset?.url || fallbackPosterUrl;
+const posterAlt = event?.eventPoster?.alt || `${event.eventName} poster`;
+const cardPaddingClass = event.isOpen ? "pb-24" : "";
 ---
 
 <div
-	class="eventsCard lift-card card-pattern flex flex-col space-y-5 rounded-xl p-5 mb-10 items-center relative pb-24"
+	class={`eventsCard lift-card card-pattern flex flex-col space-y-5 rounded-xl p-5 mb-10 items-center relative ${cardPaddingClass}`}
 >
 	<div class="flex flex-col space-y-5 items-center">
 		<img
-			src={event.eventPoster.asset.url}
-			alt={event.eventPoster.alt}
+			src={posterUrl}
+			alt={posterAlt}
 			class="eventsImg rounded-xl"
 		/>
+		<h2 class="text-2xl font-semibold self-start">{event.eventName}</h2>
 		{
 			event.showDate ? (
 				<h1 class="text-xl font-bold self-start">
@@ -48,25 +53,18 @@ const { event } = Astro.props as Props;
 			{event.desc}
 		</p>
 	</div>
-	<div class="flex justify-center">
-		{
-			event.isOpen ? (
+	{
+		event.isOpen && (
+			<div class="flex justify-center">
 				<a
 					href={event.formLink}
 					class="text-center fancyBtn heading2 px-10 py-2 pb-3 rounded-lg absolute bottom-6"
 				>
 					register
 				</a>
-			) : (
-				<a
-					href={event.formLink}
-					class="text-center fancyClose heading2 px-10 py-2 pb-3 rounded-lg absolute bottom-6"
-				>
-					closed
-				</a>
-			)
-		}
-	</div>
+			</div>
+		)
+	}
 </div>
 <style>
 	.eventsCard {
@@ -81,7 +79,8 @@ const { event } = Astro.props as Props;
 	.eventsImg {
 		width: 100%;
 		height: auto;
+		aspect-ratio: 16 / 9;
+		object-fit: cover;
 		max-width: 290px;
-		max-height: 180px;
 	}
 </style>

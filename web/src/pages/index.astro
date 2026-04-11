@@ -6,11 +6,14 @@ import EventSection from "../components/Events/EventSection.astro";
 import EventCard from "../components/Events/EventCard.astro";
 import Partners from "../components/Home/Partners.astro";
 
-import { events } from "../lib/api.js";
+import { allEvents } from "../lib/api.js";
+import { mergeEventsWithSupplemental } from "../data/supplementalEvents";
 import { getSanityContent } from "../utils/helpers";
 
-const response = await getSanityContent({ query: events });
-const eventsData = response.allEvent;
+const response = await getSanityContent({ query: allEvents });
+const eventsData = mergeEventsWithSupplemental(response.allEvent)
+	.filter((event) => event.showDate !== false)
+	.slice(0, 3);
 ---
 
 <Layout title="Home">
