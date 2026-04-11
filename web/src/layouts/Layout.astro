@@ -1,0 +1,1126 @@
+---
+import "../styles/global.css";
+import "@fontsource/inter/400.css";
+import "@fontsource/inter/500.css";
+import "@fontsource/inter/600.css";
+import "@fontsource/inter/700.css";
+import "@fontsource/inter/800.css";
+
+export interface Props {
+  title: string;
+  desc?: string;
+  og?: string;
+  slug?: string;
+}
+
+const { title, desc, og, slug } = Astro.props as Props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Primary Meta Tags -->
+    <title>{title + " | IEEE-IIIT Delhi"}</title>
+    <meta name="title" content="IEEE-IIIT Delhi" />
+    <meta
+      name="description"
+      content={desc !== null
+        ? desc
+        : "Official IEEE Student Branch of IIIT Delhi"}
+    />
+    <meta
+      name="keywords"
+      content="IEEE, IEEE IIITD, IEEE-IIIT, IIITD, IIIT Delhi, Compsoc, WIE, Women in Engineering, Slash"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content={"https://ieee.iiitd.edu.in/" + slug !== null ? slug : ""}
+    />
+    <meta property="og:title" content="IEEE-IIIT Delhi" />
+    <meta
+      property="og:description"
+      content="Official IEEE Student Branch of IIIT Delhi"
+    />
+    <meta property="og:image" content={og !== null ? og : "/hero-img.webp"} />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content={"https://ieee.iiitd.edu.in/" + slug !== null ? slug : ""}
+    />
+    <meta property="twitter:title" content="IEEE-IIIT Delhi" />
+    <meta
+      property="twitter:description"
+      content="Official IEEE Student Branch of IIIT Delhi"
+    />
+    <meta
+      property="twitter:image"
+      content={og !== null ? og : "/hero-img.webp"}
+    />
+
+    <!-- Favicon -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://use.typekit.net/nzg5mjs.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/logo.png" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <div id="first-load-screen" class="first-load-screen" aria-hidden="true">
+      <div class="first-load-inner">
+        <img src="/logo.png" alt="IEEE IIIT Delhi" class="first-load-logo" />
+        <p class="heading first-load-title">IEEE IIIT Delhi</p>
+        <div class="first-load-bar"><span></span></div>
+      </div>
+    </div>
+    <header class="header">
+      <nav class="nav">
+        <div class="mx-auto my-5 max-w-xl container">
+          <div class="flex justify-between items-center px-4 md:px-8 xl:px-0">
+            <div class="flex items-center">
+              <a href="/">
+                <img src="/logo.png" alt="logo" class="h-12" />
+              </a>
+            </div>
+            <div class="flex items-center">
+              <a href="/events/" class="heading2 px-4 py-2">events</a>
+              <a href="/blogs/" class="heading2 px-4 py-2">blog</a>
+              <a href="/members/" class="heading2 pl-4 py-2">members</a>
+              <button
+                id="theme-toggle"
+                type="button"
+                class="theme-toggle ml-3"
+                aria-label="Toggle color theme"
+                title="Toggle color theme"
+              >
+                <i class="material-icons theme-icon" aria-hidden="true"
+                  >dark_mode</i
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <slot />
+      <!-- contact -->
+      <section id="contact" class="footer-bg">
+        <div class="container w-11/12 mx-auto">
+          <div
+            class="mx-auto flex flex-col md:flex-row gap-10 text-white py-20 justify-around max-w-lg md:max-w-none w-4/5 space-y-5"
+          >
+            <a
+              href="./members#alumni"
+              class="memAlum flex flex-col p-7 justify-end items-end text-right rounded-xl"
+            >
+              <h1 class="heading text-3xl font-bold">Our Members and Alumni</h1>
+
+              <div
+                class="rounded-full border-1 py-2 px-2 flex justify-center items-center mt-7"
+                style="background: #f8f8f870"
+              >
+                <i class="material-icons text-white"> keyboard_arrow_right</i>
+              </div>
+            </a>
+            <div class="flex flex-col justify-center md:w-1/2">
+              <h1
+                class="fancyJoin heading text-4xl md:text-4xl font-bold leading-10"
+              >
+                Join Us.
+              </h1>
+
+              <h2
+                class="heading text-2xl md:text-3xl xl:text-4xl font-bold w-full md:w-4/5 mt-3"
+              >
+                Become a part of the exclusive community.
+              </h2>
+
+              <h3 class="font-bold mt-6 mb-2">Perks</h3>
+              <ul class="text-gray-500">
+                <li class="my-2">
+                  Eligibility for many scholarships, grants and awards.
+                </li>
+                <li class="my-2">
+                  Opportunity to connect with various faculty members.
+                </li>
+                <li class="my-2">
+                  Interact with many distinguished members from the industry and
+                  academia connected to the club.
+                </li>
+              </ul>
+
+              <a
+                href="https://forms.gle/5xoKNbj6moQpRn2o9"
+                class="heading2 applyBtn bg-white px-10 py-2 text-black rounded-lg mt-10 w-1/4 text-center min-w-[128px]"
+              >
+                apply
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="px-8 bg-[#111115]">
+      <div class="container mx-auto py-14 mb-28">
+        <div
+          class="flex flex-col md:flex-row gap-4 md:gap-8 md:justify-between text-white md:mx-auto space-y-5 mx-auto max-w-lg md:max-w-none"
+        >
+          <div class="flex flex-row gap-4 w-full min-w-fit md:w-1/4 md:mx-auto">
+            <div class="flex pt-4 text-white">
+              <img src="/logowhite.png" alt="logo" class="footerLogo" />
+            </div>
+            <div class="flex flex-col md:justify-center">
+              <h1 class="heading text-xl font-bold">IEEE</h1>
+              <h1 class="heading text-xl font-bold">IIIT Delhi</h1>
+              <h2 class="heading text-md font-bold text-gray-500">
+                student branch
+              </h2>
+
+              <p class="text-sm text-gray-500 mt-3">
+                IIIT Delhi, Okhla Industrial, <br />
+                Phase-III, New Delhi-110020
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col md:flex-row gap-4 md:gap-16 md:justify-between w-full md:w-1/3 md:mx-auto"
+          >
+            <div class="flex flex-col w-full md:w-1/2 mb-5 md:mb-5">
+              <h1 class="heading font-bold">Affiliations</h1>
+              <div
+                class="flex flex-wrap gap-1 md:flex-col space-x-5 md:space-x-0"
+              >
+                <a
+                  href="https://iiitd.ac.in/"
+                  target="_blank"
+                  class="text-gray-500"
+                  ><span class="link link-underline link-underline-black"
+                    >IIIT Delhi
+                  </span>
+                </a>
+                <a
+                  href="https://www.ieee.org/"
+                  target="_blank"
+                  class="text-gray-500"
+                  ><span class="link link-underline link-underline-black"
+                    >IEEE
+                  </span>
+                </a>
+                <a
+                  href="https://www.wie.ieee.org/"
+                  target="_blank"
+                  class="text-gray-500"
+                  ><span class="link link-underline link-underline-black"
+                    >WiE
+                  </span>
+                </a>
+                <a
+                  href="https://www.computer.org/"
+                  target="_blank"
+                  class="text-gray-500"
+                  ><span class="link link-underline link-underline-black"
+                    >CompSoc
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="flex flex-col w-full md:w-1/2">
+              <h1 class="heading font-bold">Socials</h1>
+              <div class="flex flex-wrap md:flex-col md:space-x-0 gap-1">
+                <a
+                  href="https://www.instagram.com/ieeeiiitdelhi/"
+                  target="_blank"
+                  class="pr-5 md:pr-0 text-gray-500"
+                  ><span class="link link-underline link-underline-black"
+                    >Instagram
+                  </span>
+                </a>
+                <a
+                  href="https://www.facebook.com/ieeeiiitd/"
+                  target="_blank"
+                  class="pr-5 md:pr-0 text-gray-500"
+                  ><span class="link link-underline link-underline-black"
+                    >Facebook
+                  </span>
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/ieee-iiitd/"
+                  target="_blank"
+                  class="pr-5 md:pr-0 text-gray-500"
+                  ><span class="link link-underline link-underline-black"
+                    >LinkedIn
+                  </span>
+                </a>
+                <a
+                  href="https://www.youtube.com/channel/UCKqQYeZ_yOSWL0BQ7eWUqRA"
+                  target="_blank"
+                  class="pr-5 md:pr-0 text-gray-500"
+                  ><span class="link link-underline link-underline-black"
+                    >YouTube
+                  </span>
+                </a>
+                <a
+                  href="https://twitter.com/ieee_d/"
+                  target="_blank"
+                  class="pr-5 md:pr-0 text-gray-500"
+                  ><span class="link link-underline link-underline-black"
+                    >Twitter
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col w-full md:w-1/5">
+            <h1 class="heading font-bold">Contact</h1>
+            <p class="text-gray-500">
+              <a href="mailto:ieee@iiitd.ac.in">ieee@iiitd.ac.in</a>
+            </p>
+
+            <a
+              href="https://github.com/IEEE-IIIT-Delhi/branding"
+              class="heading font-bold mt-3"
+              ><span class="link link-underline link-underline-black"
+                >Graphic Identity
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr class="border-gray-600 opacity-50 rounded-full mx-auto linejoin" />
+      <p class="text-center py-3 pb-5 text-gray-600 opacity-50 heading2">
+        © 2026 | IEEE - IIIT Delhi
+      </p>
+    </footer>
+    <script is:inline>
+      (() => {
+        const storageKey = "ieee-theme";
+        const firstLoadKey = "ieee-first-load-complete";
+        const root = document.documentElement;
+        const media = window.matchMedia("(prefers-color-scheme: dark)");
+        const loader = document.getElementById("first-load-screen");
+
+        const applyTheme = (theme) => {
+          root.setAttribute("data-theme", theme);
+          const icon = document.querySelector("#theme-toggle .theme-icon");
+          if (icon) {
+            icon.textContent = theme === "dark" ? "light_mode" : "dark_mode";
+          }
+        };
+
+        const hideLoader = () => {
+          if (!loader) return;
+          loader.classList.add("first-load-screen--hidden");
+          window.setTimeout(() => loader.remove(), 450);
+        };
+
+        const storedTheme = localStorage.getItem(storageKey);
+        applyTheme(storedTheme || (media.matches ? "dark" : "light"));
+
+        document.addEventListener("click", (event) => {
+          const target = event.target;
+          if (!(target instanceof Element)) return;
+          const button = target.closest("#theme-toggle");
+          if (!button) return;
+
+          const current = root.getAttribute("data-theme");
+          const next = current === "dark" ? "light" : "dark";
+          localStorage.setItem(storageKey, next);
+          applyTheme(next);
+        });
+
+        const handleSystemTheme = (event) => {
+          if (!localStorage.getItem(storageKey)) {
+            applyTheme(event.matches ? "dark" : "light");
+          }
+        };
+
+        if (typeof media.addEventListener === "function") {
+          media.addEventListener("change", handleSystemTheme);
+        } else if (typeof media.addListener === "function") {
+          media.addListener(handleSystemTheme);
+        }
+
+        if (!localStorage.getItem(firstLoadKey)) {
+          root.classList.add("first-load-active");
+          window.setTimeout(() => {
+            hideLoader();
+            root.classList.remove("first-load-active");
+            localStorage.setItem(firstLoadKey, "1");
+          }, 1050);
+        } else {
+          hideLoader();
+        }
+      })();
+    </script>
+    <style is:global>
+      * {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+      }
+
+      :root {
+        color-scheme: light;
+        --page-bg: #f3f5fc;
+        --page-spot: rgba(111, 132, 255, 0.16);
+        --text-main: #17132d;
+        --text-muted: #6c7390;
+        --surface-soft: #eef2fb;
+        --surface-strong: #2b2b35;
+        --surface-footer: #202027;
+        --surface-footer-deep: #111115;
+        --footer-bg-fixed: #202027;
+        --footer-bg-deep-fixed: #111115;
+        --footer-heading-fixed: #f4f6ff;
+        --footer-muted-fixed: #8e96b1;
+        --header-bg: rgba(255, 255, 255, 0.8);
+        --header-border: rgba(17, 21, 45, 0.08);
+        --card-bg: #ffffff;
+        --card-border: rgba(23, 29, 55, 0.08);
+        --card-shadow: 0px 10px 24px -14px rgba(20, 33, 66, 0.35);
+        --pattern-tint: rgba(114, 130, 255, 0.16);
+        --heading-primary: #151c35;
+        --heading-secondary: #4b5a87;
+        --fancy-join-a: #f56c6c;
+        --fancy-join-b: #ee93b4;
+        --fancy-event-a: #6e80ff;
+        --fancy-event-b: #73b0ff;
+        --fancy-members-a: #ca9ffb;
+        --fancy-members-b: #8b9af0;
+        --members-heading-page: #7f4fd3;
+        --blog-heading-page: #2e63d9;
+        --members-gradient-a: rgba(171, 128, 255, 0.22);
+        --members-gradient-b: rgba(127, 213, 255, 0.2);
+        --members-gradient-c: rgba(255, 170, 225, 0.15);
+        --blog-gradient-a: rgba(110, 128, 255, 0.22);
+        --blog-gradient-b: rgba(100, 188, 255, 0.19);
+        --blog-gradient-c: rgba(121, 212, 201, 0.16);
+        --page-pattern-color: rgba(76, 94, 162, 0.08);
+      }
+
+      :root[data-theme="dark"] {
+        color-scheme: dark;
+        --page-bg: #0d1119;
+        --page-spot: rgba(91, 119, 249, 0.2);
+        --text-main: #e7ecff;
+        --text-muted: #a6b0cd;
+        --surface-soft: #131b2a;
+        --surface-strong: #121826;
+        --surface-footer: #0f1521;
+        --surface-footer-deep: #0b1119;
+        --header-bg: rgba(12, 17, 26, 0.76);
+        --header-border: rgba(151, 170, 230, 0.14);
+        --card-bg: #141d2c;
+        --card-border: rgba(157, 177, 240, 0.14);
+        --card-shadow: 0px 12px 30px -16px rgba(3, 7, 18, 0.96);
+        --pattern-tint: rgba(146, 165, 255, 0.2);
+        --heading-primary: #eef2ff;
+        --heading-secondary: #bcc9f3;
+        --fancy-join-a: #ff8f8f;
+        --fancy-join-b: #f7b2cf;
+        --fancy-event-a: #9cb4ff;
+        --fancy-event-b: #7dc9ff;
+        --fancy-members-a: #e4b9ff;
+        --fancy-members-b: #a7b8ff;
+        --members-heading-page: #d8b9ff;
+        --blog-heading-page: #9ec2ff;
+        --members-gradient-a: rgba(157, 119, 244, 0.22);
+        --members-gradient-b: rgba(102, 176, 250, 0.2);
+        --members-gradient-c: rgba(200, 123, 255, 0.16);
+        --blog-gradient-a: rgba(116, 141, 255, 0.22);
+        --blog-gradient-b: rgba(61, 154, 240, 0.2);
+        --blog-gradient-c: rgba(74, 205, 184, 0.17);
+        --page-pattern-color: rgba(155, 176, 242, 0.12);
+      }
+
+      :root.first-load-active,
+      :root.first-load-active body {
+        overflow: hidden;
+      }
+
+      body {
+        background-color: var(--page-bg);
+        background-image:
+          radial-gradient(circle at 12% 8%, var(--page-spot) 0, transparent 34%),
+          radial-gradient(circle at 88% 0, var(--page-spot) 0, transparent 32%);
+        color: var(--text-main);
+        transition:
+          background-color 0.25s ease,
+          color 0.25s ease;
+      }
+
+      main {
+        color: var(--text-main);
+      }
+
+      .page-gradient {
+        position: relative;
+        isolation: isolate;
+        overflow: clip;
+      }
+
+      .page-gradient::before,
+      .page-gradient::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+      }
+
+      .page-gradient::before {
+        z-index: 0;
+        background-size: 150% 150%;
+        animation: pageGradientFloat 16s ease-in-out infinite alternate;
+      }
+
+      .page-gradient::after {
+        z-index: 0;
+        background-image:
+          repeating-linear-gradient(
+            120deg,
+            transparent 0,
+            transparent 14px,
+            var(--page-pattern-color) 14px,
+            var(--page-pattern-color) 15px
+          ),
+          repeating-linear-gradient(
+            -120deg,
+            transparent 0,
+            transparent 18px,
+            var(--page-pattern-color) 18px,
+            var(--page-pattern-color) 19px
+          );
+        opacity: 0.5;
+        animation: pagePatternFlow 22s linear infinite;
+      }
+
+      .page-gradient > * {
+        position: relative;
+        z-index: 1;
+      }
+
+      .page-gradient-members::before {
+        background-image:
+          radial-gradient(
+            62% 54% at 14% 18%,
+            var(--members-gradient-a) 0,
+            transparent 72%
+          ),
+          radial-gradient(
+            52% 45% at 88% 20%,
+            var(--members-gradient-b) 0,
+            transparent 70%
+          ),
+          radial-gradient(
+            58% 52% at 48% 92%,
+            var(--members-gradient-c) 0,
+            transparent 70%
+          );
+      }
+
+      .page-gradient-blog::before {
+        background-image:
+          radial-gradient(
+            60% 52% at 10% 16%,
+            var(--blog-gradient-a) 0,
+            transparent 70%
+          ),
+          radial-gradient(
+            54% 48% at 84% 26%,
+            var(--blog-gradient-b) 0,
+            transparent 72%
+          ),
+          radial-gradient(
+            66% 54% at 52% 92%,
+            var(--blog-gradient-c) 0,
+            transparent 72%
+          );
+      }
+
+      .heading.page-heading-members,
+      .heading.page-heading-blog {
+        background: none;
+        -webkit-text-fill-color: currentColor;
+      }
+
+      .heading.page-heading-members {
+        color: var(--members-heading-page);
+      }
+
+      .heading.page-heading-blog {
+        color: var(--blog-heading-page);
+      }
+
+      @keyframes pageGradientFloat {
+        0% {
+          transform: translate3d(-2%, -1.5%, 0) scale(1);
+        }
+        100% {
+          transform: translate3d(2%, 2%, 0) scale(1.06);
+        }
+      }
+
+      @keyframes pagePatternFlow {
+        from {
+          background-position: 0 0, 0 0;
+        }
+        to {
+          background-position: 300px 200px, -240px 220px;
+        }
+      }
+
+      .theme-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.35rem;
+        height: 2.35rem;
+        border-radius: 999px;
+        border: 1px solid var(--card-border);
+        background: var(--card-bg);
+        color: var(--text-main);
+        transition:
+          transform 0.2s ease,
+          box-shadow 0.2s ease,
+          border-color 0.2s ease;
+      }
+
+      .theme-toggle:hover {
+        transform: translateY(-1px);
+        box-shadow: var(--card-shadow);
+      }
+
+      .theme-icon {
+        font-size: 1.15rem;
+        line-height: 1;
+      }
+
+      .first-load-screen {
+        position: fixed;
+        inset: 0;
+        z-index: 100;
+        display: grid;
+        place-items: center;
+        background:
+          radial-gradient(circle at 25% 15%, var(--page-spot), transparent 40%),
+          var(--page-bg);
+        transition:
+          opacity 0.35s ease,
+          visibility 0.35s ease;
+      }
+
+      .first-load-screen--hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+      }
+
+      .first-load-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.85rem;
+      }
+
+      .first-load-logo {
+        width: 84px;
+        height: 84px;
+        border-radius: 1rem;
+        box-shadow: var(--card-shadow);
+      }
+
+      .first-load-title {
+        font-size: 1.3rem;
+        color: var(--heading-primary);
+      }
+
+      .first-load-bar {
+        width: 136px;
+        height: 4px;
+        background: color-mix(in srgb, var(--heading-secondary) 18%, transparent);
+        border-radius: 999px;
+        overflow: hidden;
+      }
+
+      .first-load-bar span {
+        display: block;
+        width: 52%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          var(--fancy-event-a),
+          var(--fancy-event-b)
+        );
+        border-radius: 999px;
+        animation: firstLoadPulse 0.95s ease-in-out infinite alternate;
+      }
+
+      @keyframes firstLoadPulse {
+        from {
+          transform: translateX(-8px);
+          opacity: 0.78;
+        }
+        to {
+          transform: translateX(74px);
+          opacity: 1;
+        }
+      }
+
+      .lift-card {
+        transition:
+          transform 0.28s ease,
+          box-shadow 0.28s ease,
+          border-color 0.28s ease;
+      }
+
+      .lift-card:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--card-shadow);
+      }
+
+      .card-pattern {
+        position: relative;
+        overflow: hidden;
+        isolation: isolate;
+      }
+
+      .card-pattern::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: repeating-linear-gradient(
+          135deg,
+          var(--pattern-tint) 0,
+          var(--pattern-tint) 2px,
+          transparent 2px,
+          transparent 12px
+        );
+        opacity: 0.06;
+        pointer-events: none;
+      }
+
+      .card-pattern > * {
+        position: relative;
+        z-index: 1;
+      }
+
+      main section {
+        animation: sectionReveal 0.55s ease both;
+      }
+
+      main section:nth-of-type(2) {
+        animation-delay: 0.04s;
+      }
+
+      main section:nth-of-type(3) {
+        animation-delay: 0.08s;
+      }
+
+      @keyframes sectionReveal {
+        from {
+          opacity: 0;
+          transform: translateY(8px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .margin-space {
+        margin-left: 12.5rem;
+        margin-right: 12.5rem;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 1200px;
+      }
+
+      .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        /* height: 6.5rem; */
+        background-color: var(--header-bg);
+        -webkit-backdrop-filter: blur(8px);
+        backdrop-filter: blur(50px);
+        z-index: 10;
+      }
+
+      .heading,
+      .heading2 {
+        font-family: Sofia-pro, sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        color: var(--heading-primary);
+      }
+
+      .heading2 {
+        font-weight: 400;
+        color: var(--heading-secondary);
+      }
+
+      .header a.heading2 {
+        color: var(--heading-secondary);
+      }
+
+      .heroImg {
+        width: 100%;
+        height: 100%;
+        max-width: 633.12px;
+        max-height: 633px;
+      }
+
+      .aboutCont {
+        height: 50vh;
+      }
+
+      .fancyBtn {
+        /* background-image: linear-gradient(to right, #779dff 0.83%, #287fff 99.17%); */
+        background-image: linear-gradient(
+          to right,
+          #779dff,
+          #287fff,
+          #1d76fa,
+          #5a87fa
+        );
+        box-shadow: 0 6px 15px 0 #779dff;
+        background-size: 300% 100%;
+
+        moz-transition:
+          background 0.4s ease-in-out,
+          box-shadow 0.4s ease-in-out;
+        -o-transition:
+          background 0.4s ease-in-out,
+          box-shadow 0.4s ease-in-out;
+        -webkit-transition:
+          background 0.4s ease-in-out,
+          box-shadow 0.4s ease-in-out;
+        transition:
+          background 0.4s ease-in-out,
+          box-shadow 0.4s ease-in-out;
+      }
+
+      .fancyBtn:hover {
+        background-position: 100% 0;
+        box-shadow: 0 4px 18px 4px #5987fb;
+
+        moz-transition:
+          background 0.4s ease-in-out,
+          box-shadow 0.4s ease-in-out;
+        -o-transition:
+          background 0.4s ease-in-out,
+          box-shadow 0.4s ease-in-out;
+        -webkit-transition:
+          background 0.4s ease-in-out,
+          box-shadow 0.4s ease-in-out;
+        transition:
+          background 0.4s ease-in-out,
+          box-shadow 0.4s ease-in-out;
+      }
+
+      .memAlum {
+        width: 100%;
+        /* height: auto; */
+        max-width: 356px;
+        height: 462px;
+        /* max-height: 462px; */
+        background: linear-gradient(
+            143.93deg,
+            rgba(238, 147, 180, 0.9) -0.48%,
+            rgba(245, 108, 108, 0.9) 100%
+          ),
+          url("/ieee_dsc.jpg");
+      }
+
+      .fancyJoin {
+        background: linear-gradient(90deg, var(--fancy-join-a), var(--fancy-join-b));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .fancyEvent {
+        background: linear-gradient(
+          90deg,
+          var(--fancy-event-a),
+          var(--fancy-event-b)
+        );
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .fancyCollab {
+        background: linear-gradient(
+          90deg,
+          var(--fancy-event-a),
+          var(--fancy-event-b)
+        );
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .fancyMembers {
+        background: linear-gradient(
+          90deg,
+          var(--fancy-members-a),
+          var(--fancy-members-b)
+        );
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .pic {
+        border-radius: 18px;
+        margin-bottom: 10px;
+        width: 100px;
+        aspect-ratio: 1;
+        object-fit: cover;
+      }
+
+      .name {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: var(--text-main);
+      }
+
+      .pos {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 30px;
+        color: var(--text-main);
+        opacity: 0.6;
+      }
+
+      .fancyClose {
+        background-color: var(--surface-soft);
+        pointer-events: none;
+        cursor: default;
+      }
+
+      .partnerImg {
+        width: 100%;
+        height: auto;
+        max-width: 200px;
+        max-height: 200px;
+      }
+
+      .applyBtn {
+        box-shadow: 0px 0px 15px 2px rgba(255, 255, 255, 0.2);
+      }
+
+      .footer-bg {
+        /* background-color: #1e1e28; */
+        background: var(--footer-bg-fixed);
+      }
+
+      .footerLogo {
+        width: 85px;
+        height: 85px;
+      }
+
+      .memCard {
+        /* margin: 1.5rem 10rem; */
+      }
+
+      .memPgImg {
+        width: 229px;
+      }
+
+      .memPgTxt {
+        width: 654px;
+      }
+
+      .applyBtnTop {
+        padding-bottom: 17px;
+      }
+
+      .join {
+        margin-left: 5px;
+      }
+
+      .registerBtn {
+        padding-bottom: 12px;
+      }
+
+      .applyBtn {
+        padding-bottom: 15px;
+      }
+
+      .line {
+        margin-top: 100px;
+        opacity: 0.3;
+      }
+
+      .topline {
+        margin-top: 50px;
+      }
+
+      #partners {
+        background-color: var(--surface-strong);
+        padding: 150px 0;
+      }
+
+      #contact {
+        padding: 50px 0;
+      }
+
+      .linejoin {
+        margin-top: 50px;
+      }
+
+      .aboutheading {
+        color: var(--text-main);
+      }
+
+      .membertitle {
+        margin-top: 75px;
+      }
+
+      .report {
+        background-color: var(--card-bg);
+        border: 1px solid var(--card-border);
+        box-shadow:
+          0px 6px 14px -6px rgba(24, 39, 75, 0.12),
+          0px 10px 32px -4px rgba(24, 39, 75, 0.1);
+      }
+
+      .blog-card,
+      .eventsCard,
+      .memCard {
+        background-color: var(--card-bg);
+        border: 1px solid var(--card-border);
+      }
+
+      .blog-card {
+        box-shadow: var(--card-shadow);
+      }
+
+      .memCard {
+        border-radius: 1rem;
+        padding: 0.9rem 0.6rem;
+      }
+
+      #about,
+      #events {
+        background-color: var(--surface-soft) !important;
+      }
+
+      footer {
+        background: var(--footer-bg-deep-fixed) !important;
+      }
+
+      .text-gray-500,
+      .text-gray-600 {
+        color: var(--text-muted) !important;
+      }
+
+      .footer-bg .heading,
+      footer .heading,
+      footer .heading2 {
+        color: var(--footer-heading-fixed);
+      }
+
+      .footer-bg .text-gray-500,
+      .footer-bg .text-gray-600,
+      footer .text-gray-500,
+      footer .text-gray-600 {
+        color: var(--footer-muted-fixed) !important;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        main section,
+        .lift-card {
+          animation: none !important;
+          transition: none !important;
+          transform: none !important;
+        }
+
+        .page-gradient::before,
+        .page-gradient::after {
+          animation: none !important;
+        }
+      }
+
+      .link-underline {
+        border-bottom-width: 0;
+        background-image: linear-gradient(transparent, transparent),
+          linear-gradient(#fff, #fff);
+        background-size: 0 3px;
+        background-position: 0 100%;
+        background-repeat: no-repeat;
+        transition: background-size 0.3s ease-in-out;
+      }
+
+      .link-underline-black {
+        background-image: linear-gradient(transparent, transparent),
+          linear-gradient(rgb(107 114 128), rgb(107 114 128));
+      }
+      .link-underline-blue {
+        background-image: linear-gradient(transparent, transparent),
+          linear-gradient(#5e7eff, #5e7eff);
+      }
+
+      .link-underline:hover {
+        background-size: 100% 1px;
+        background-position: 0 100%;
+      }
+
+      @media screen and (max-width: 768px) {
+        /* .margin-space {
+	margin-left: 0;
+	margin-right: 0;
+} */
+
+        body section {
+          padding: 0px 20px;
+        }
+
+        .aboutCont div div {
+          margin-bottom: 20px;
+        }
+
+        .eventsCard {
+          margin: 20px;
+          box-shadow:
+            0px 6px 14px -6px rgba(24, 39, 75, 0.12),
+            0px 10px 32px -4px rgba(24, 39, 75, 0.1);
+        }
+
+        #events,
+        #partners {
+          padding-bottom: 30px;
+        }
+
+        .partnerImg {
+          width: 100%;
+          height: auto;
+          max-width: 100px;
+          max-height: 100px;
+        }
+      }
+
+      .sofia {
+        font-family: "Sofia-pro", sans-serif;
+      }
+
+      @media screen and (max-width: 1280px) and (min-width: 748px) {
+        .container {
+          width: 90%;
+          max-width: 896px;
+        }
+      }
+    </style>
+  </body>
+</html>

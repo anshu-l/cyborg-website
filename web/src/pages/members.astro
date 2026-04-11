@@ -1,0 +1,18 @@
+---
+import Layout from "../layouts/Layout.astro";
+import MemberSection from "../components/Members/MemberSection.astro";
+import memData from "../data/members.json";
+---
+
+<Layout title="Members">
+  <section id="members" class="page-gradient page-gradient-members md:min-h-screen">
+    <div class="container mx-auto">
+      <div class="flex flex-col gap-x-28 pt-28 pb-24 md:pt-28 md:pb-24">
+        <h1 class="heading page-heading-members text-5xl md:text-7xl font-bold">
+          members
+        </h1>
+        {memData.map((team) => <MemberSection team={team} />)}
+      </div>
+    </div>
+  </section>
+</Layout>
