@@ -1,0 +1,21 @@
+{
+    "name": "ieee.iiitd.edu.in",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/IEEE-IIIT-Delhi/ieee.iiitd.edu.in",
+    "author": "Jaideep <guntupallijaideep@gmail.com>",
+    "license": "MIT",
+    "private": true,
+    "workspaces": [
+        "web",
+        "studio"
+    ],
+    "scripts": {
+        "pkg:web": "yarn workspace web install",
+        "pkg:studio": "yarn workspace studio install",
+        "pkg": "yarn pkg:web && yarn pkg:studio"
+    },
+    "devDependencies": {
+        "concurrently": "^7.3.0"
+    }
+}
