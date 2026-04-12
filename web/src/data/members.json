@@ -56,130 +56,100 @@
     "team": "IEEE Core Team",
     "members": [
       {
-        "name": "Chahat Ahuja",
+        "name": "Anshul Kumar Singh",
         "pos": "Chairperson",
-        "img": "/people/chahat.jpg",
-        "social": {
-          "fb": "https://www.facebook.com",
-          "tw": "https://x.com",
-          "wb": "#",
-          "email": "ieee@iiitd.ac.in",
-          "phone": "9821585420"
-        },
-        "desc": "coords ka option nhi hai upar brooo",
-        "a": "./members/115"
-      },
-      {
-        "name": "Satyam",
-        "pos": "Vice-Chairperson",
-        "img": "/people/Satyam_ieee.jpg",
-        "social": {
-          "fb": "https://www.facebook.com",
-          "tw": "https://x.com",
-          "wb": "#",
-          "email": "ieee@iiitd.ac.in",
-          "phone": "9821585420"
-        },
-        "desc": "coords ka option nhi hai upar brooo",
-        "a": "./members/115"
-      },
-      {
-        "name": "Yuvraj verma",
-        "pos": "General Secretary",
-        "img": "/people/Yuvraj Verma.jpg",
-        "social": {
-          "fb": "https://www.facebook.com",
-          "tw": "https://x.com",
-          "wb": "#",
-          "email": "yuvraj23617@iiitd.ac.in",
-          "phone": "8130278155"
-        },
-        "desc": "Here to make IEEE great again.",
-        "a": "./members/109"
-      },
-      {
-        "name": "Divyansh Mishra",
-        "pos": "Webmaster",
-        "img": "/people/2025/Divyansh Mishra.jpg",
-        "social": {
-          "fb": "https://www.facebook.com",
-          "tw": "https://x.com",
-          "wb": "#",
-          "email": "divyansh21042@iiitd.ac.in",
-          "phone": "9334808488"
-        },
-        "desc": "A tech enthusiast turning code into connections fueled by caffeine.",
-        "a": "./members/101"
-      },
-      {
-        "name": "Devesh Roy",
-        "pos": "Events Head",
-        "img": "/people/2025/Devesh Roy.jpg",
-        "social": {
-          "fb": "https://www.facebook.com",
-          "tw": "https://x.com",
-          "wb": "#",
-          "email": "devesh23193@iiitd.ac.in",
-          "phone": "9456973767"
-        },
-        "desc": "Hi ,I am Devesh from the events team, currently in second year CSAM .A professional doomscroller ,firm believer in skills over cg(have none).Feel free to reach me out, excited to work with you all .",
-        "a": "./members/98"
-      },
-      {
-        "name": "Anika Aharwal",
-        "pos": "Design Head",
-        "img": "/people/2025/Anika Aharwal.jpeg",
-        "social": {
-          "fb": "https://www.facebook.com",
-          "tw": "https://x.com",
-          "wb": "#",
-          "email": "anika23086@iiitd.ac.in",
-          "phone": "8130272251"
-        },
-        "desc": "life is a soup and i\u2019m the form",
-        "a": "./members/99"
-      },
-      {
-        "name": "Anshul Kumar Singh ",
-        "pos": "Content Head",
         "img": "/people/Anshul Kumar Singh.png",
         "social": {
           "fb": "https://www.facebook.com",
           "tw": "https://x.com",
-          "wb": "#",
-          "email": "anshul23103@iiitd.ac.in",
-          "phone": "8700331344"
+          "wb": "#"
         },
         "desc": "hey i am 2nd year csd student",
         "a": "./members/102"
       },
       {
-        "name": "Abhimanyu",
-        "pos": "Operations Head",
-        "img": "/people/Abhimanyu Sharma.jpeg",
+        "name": "Rijusmit Biswas",
+        "pos": "Vice-Chairperson",
+        "img": "/people/Rijusmit Biswas.jpg",
         "social": {
           "fb": "https://www.facebook.com",
           "tw": "https://x.com",
-          "wb": "#",
-          "email": "abhimanyu23021@iiitd.ac.in",
-          "phone": "9650406298"
+          "wb": "#"
         },
-        "desc": "Ece sophomore at IIITD. Fun to work with, social guy.",
-        "a": "./members/110"
+        "desc": "Hi, I am Rijusmit Biswas, a Web Developer by passion and an ML enthusiast, Looking for a break in MLops. Mad for Sci-Fi and some old school Literature.",
+        "a": "./members/91"
       },
       {
-        "name": "Vikas Meena ",
-        "pos": "PR Head",
-        "img": "/people/Vikas Meena.jpg",
+        "name": "Sidharth",
+        "pos": "Secretary",
+        "img": "/people/Sidharth IIITD.JPG",
         "social": {
           "fb": "https://www.facebook.com",
           "tw": "https://x.com",
-          "wb": "#",
-          "email": "vikas23593@iiitd.ac.in",
-          "phone": "9560322530"
+          "wb": "#"
         },
-        "desc": "I\u2019m Vikas Meena, a second-year Computer Science Engineering (CSE) student and the PR Lead at IEEE. I love connecting with people, organizing events, and working on cool ideas. I\u2019m all about teamwork and making things happen!",
-        "a": "./members/71"
+        "desc": "Innovative and strategic thinker with focus on exceeding expectations.",
+        "a": "./members/81"
+      },
+      {
+        "name": "Daksh Singhal",
+        "pos": "Treasurer",
+        "img": "/people/Daksh Singhal.jpg",
+        "social": {
+          "fb": "https://www.facebook.com",
+          "tw": "https://x.com",
+          "wb": "#"
+        },
+        "desc": "Interested in Electronics and AI",
+        "a": "./members/108"
+      },
+      {
+        "name": "Keshav Singh",
+        "pos": "Webmaster",
+        "img": "/people/Keshav Singh.jpg",
+        "social": {
+          "fb": "https://www.facebook.com",
+          "tw": "https://x.com",
+          "wb": "#"
+        },
+        "desc": "like to build stuff",
+        "a": "./members/85"
+      },
+      {
+        "name": "Janisha Mehta",
+        "pos": "Events Lead",
+        "img": "/people/2025/Janisha Mehta.jpeg",
+        "social": {
+          "fb": "https://www.facebook.com",
+          "tw": "https://x.com",
+          "wb": "#"
+        },
+        "desc": "I am Janisha Mehta, student at IIITD. I have a passion for accepting challenges and solving problems. I like exploring and learning about new things. I believe that discipline is essential for achieving success and leading a happy life.",
+        "a": "./members/93"
+      },
+      {
+        "name": "Ritu Basumatary",
+        "pos": "Design Lead",
+        "img": "/people/Ritu Basumatary.jpg",
+        "social": {
+          "fb": "https://www.facebook.com",
+          "tw": "https://x.com",
+          "wb": "#"
+        },
+        "desc": "I'm not Batman, I'm Catwoman.",
+        "a": "./members/83"
+      },
+      {
+        "name": "Vatsal",
+        "pos": "Operations Head",
+        "img": "/people/2026/vatsal.jpeg",
+        "social": {
+          "fb": "https://www.facebook.com",
+          "tw": "https://x.com",
+          "wb": "#"
+        },
+        "desc": "",
+        "a": "#"
       }
     ]
   },
@@ -253,7 +223,7 @@
           "email": "aditya22039@iiitd.ac.in",
           "phone": "8384035157"
         },
-        "desc": " I\u2019m a CSB student who loves learning and trying out new things. When I\u2019m not coding or working on projects, you\u2019ll probably find me playing chess, smashing it on the badminton court, or exploring cool new places. I\u2019m always up for a challenge and love being part of something exciting",
+        "desc": " I’m a CSB student who loves learning and trying out new things. When I’m not coding or working on projects, you’ll probably find me playing chess, smashing it on the badminton court, or exploring cool new places. I’m always up for a challenge and love being part of something exciting",
         "a": "./members/76"
       },
       {
@@ -313,20 +283,6 @@
         "a": "./members/80"
       },
       {
-        "name": "Sidharth",
-        "pos": "ExeCom",
-        "img": "/people/Sidharth IIITD.JPG",
-        "social": {
-          "fb": "https://www.facebook.com",
-          "tw": "https://x.com",
-          "wb": "#",
-          "email": "sidharth24555@iiitd.ac.in",
-          "phone": "9654405182"
-        },
-        "desc": "Innovative and strategic thinker with focus on exceeding expectations.",
-        "a": "./members/81"
-      },
-      {
         "name": "Agrim Upadhyay",
         "pos": "ExeCom",
         "img": "/people/Agrim Upadhyay.jpg",
@@ -339,20 +295,6 @@
         },
         "desc": "I am currently in my first year at IIITD, pursuing a degree in the CSAM branch. I have cultivated a strong passion for programming and enjoy tackling algorithmic challenges.In my free time, I enjoy exploring new technologies, playing strategy games, and unwinding with music or sports.",
         "a": "./members/82"
-      },
-      {
-        "name": "Ritu Basumatary ",
-        "pos": "ExeCom",
-        "img": "/people/Ritu Basumatary.jpg",
-        "social": {
-          "fb": "https://www.facebook.com",
-          "tw": "https://x.com",
-          "wb": "#",
-          "email": "ritu24471@iiitd.ac.in",
-          "phone": "8810227261"
-        },
-        "desc": "I'm not Batman, I'm Catwoman.",
-        "a": "./members/83"
       },
       {
         "name": "Shlok Gupta",
@@ -369,20 +311,6 @@
         "a": "./members/84"
       },
       {
-        "name": "Keshav Singh",
-        "pos": "ExeCom",
-        "img": "/people/Keshav Singh.jpg",
-        "social": {
-          "fb": "https://www.facebook.com",
-          "tw": "https://x.com",
-          "wb": "#",
-          "email": "keshav24300@iiitd.ac.in",
-          "phone": "9990099242"
-        },
-        "desc": "like to build stuff",
-        "a": "./members/85"
-      },
-      {
         "name": "Mridul Verma",
         "pos": "ExeCom",
         "img": "/people/2025/Mridul Verma.jpg",
@@ -393,7 +321,7 @@
           "email": "mridul24356@iiitd.ac.in",
           "phone": "7042463062"
         },
-        "desc": "Hello, I\u2019m Mridul Varma, a member of the PR team. I enjoy tinkering with gadgets and exploring new ideas. In my free time, I love creating engaging content.",
+        "desc": "Hello, I’m Mridul Varma, a member of the PR team. I enjoy tinkering with gadgets and exploring new ideas. In my free time, I love creating engaging content.",
         "a": "./members/86"
       },
       {
@@ -453,20 +381,6 @@
         "a": "./members/90"
       },
       {
-        "name": "rijusmit biswas",
-        "pos": "ExeCom",
-        "img": "/people/Rijusmit Biswas.jpg",
-        "social": {
-          "fb": "https://www.facebook.com",
-          "tw": "https://x.com",
-          "wb": "#",
-          "email": "rijusmit22400@iiitd.ac.in",
-          "phone": "8929693930"
-        },
-        "desc": "Hi, I am Rijusmit Biswas, a Web Developer by passion and an ML enthusiast, Looking for a break in MLops. Mad for Sci-Fi and some old school Literature. ",
-        "a": "./members/91"
-      },
-      {
         "name": "Sameeksha dagar",
         "pos": "ExeCom",
         "img": "/people/Sameeksha Dagar.jpg",
@@ -481,20 +395,6 @@
         "a": "./members/92"
       },
       {
-        "name": "Janisha Mehta",
-        "pos": "ExeCom",
-        "img": "/people/2025/Janisha Mehta.jpeg",
-        "social": {
-          "fb": "https://www.facebook.com",
-          "tw": "https://x.com",
-          "wb": "#",
-          "email": "janisha24277@iiitd.ac.in",
-          "phone": "8851262100"
-        },
-        "desc": "I am Janisha Mehta, student at IIITD. I have a passion for accepting challenges and solving problems. I like exploring and learning about new things. I believe that discipline is essential for achieving success and leading a happy life.",
-        "a": "./members/93"
-      },
-      {
         "name": "Jas Kamra",
         "pos": "ExeCom",
         "img": "/people/2025/Jas Kamra.jpeg",
@@ -505,7 +405,7 @@
           "email": "jas24278@iiitd.ac.in",
           "phone": "8920162348"
         },
-        "desc": "I\u2019m a creative and tech-savvy person currently studying at IIITD. I enjoy working on exciting projects, especially those that make a difference. With a mix of design skills and coding expertise, I\u2019m always up for a challenge. I balance my studies and personal life with a chill and friendly vibe.",
+        "desc": "I’m a creative and tech-savvy person currently studying at IIITD. I enjoy working on exciting projects, especially those that make a difference. With a mix of design skills and coding expertise, I’m always up for a challenge. I balance my studies and personal life with a chill and friendly vibe.",
         "a": "./members/94"
       },
       {
@@ -547,7 +447,7 @@
           "email": "mehardeep24346@iiitd.ac.in",
           "phone": "9319244330"
         },
-        "desc": "A visionary and keen observer ,mastering Computer Science and Electronics to fuel innovation, drive business growth, and contribute to the welfare of mankind. I\u2019m curious about technology and innovation, and eager to dive into hands-on projects. Achieving my goals means giving my absolute best, to emerge as a winner.",
+        "desc": "A visionary and keen observer ,mastering Computer Science and Electronics to fuel innovation, drive business growth, and contribute to the welfare of mankind. I’m curious about technology and innovation, and eager to dive into hands-on projects. Achieving my goals means giving my absolute best, to emerge as a winner.",
         "a": "./members/97"
       },
       {
@@ -561,7 +461,7 @@
           "email": "ayush22125@iiitd.ac.in",
           "phone": "8306708122"
         },
-        "desc": "From tech to trek, always up for a good adventure\u2014whether it\u2019s coding, creating, or exploring the unknown!",
+        "desc": "From tech to trek, always up for a good adventure—whether it’s coding, creating, or exploring the unknown!",
         "a": "./members/100"
       },
       {
@@ -631,22 +531,8 @@
           "email": "tarandeep24587@iiitd.ac.in",
           "phone": "8349080046"
         },
-        "desc": "I am someone who can be described as a bit late at times, but this trait doesn\u2019t define my work ethic or my dedication. I tend to take my time because I am always thinking, analyzing, and striving to understand things at a deeper level. This sometimes leads to a slower pace, but it also allows me to gather the necessary insights and perspectives before jumping into action. When it comes to being smart, I pride myself on my ability to think critically and solve problems in creative ways.",
+        "desc": "I am someone who can be described as a bit late at times, but this trait doesn’t define my work ethic or my dedication. I tend to take my time because I am always thinking, analyzing, and striving to understand things at a deeper level. This sometimes leads to a slower pace, but it also allows me to gather the necessary insights and perspectives before jumping into action. When it comes to being smart, I pride myself on my ability to think critically and solve problems in creative ways.",
         "a": "./members/107"
-      },
-      {
-        "name": "Daksh",
-        "pos": "ExeCom",
-        "img": "/people/Daksh Singhal.jpg",
-        "social": {
-          "fb": "https://www.facebook.com",
-          "tw": "https://x.com",
-          "wb": "#",
-          "email": "daksh24171@iiitd.ac.in",
-          "phone": "8510047477"
-        },
-        "desc": "Interested in Electronics and AI  ",
-        "a": "./members/108"
       },
       {
         "name": "Himanshu singh",
@@ -673,7 +559,7 @@
           "email": "rishi22403@iiitd.ac.in",
           "phone": "8897025979"
         },
-        "desc": "Hi! I\u2019m Rishi Pendyala, a CSE student at IIITD. I have a passion for ideation, planning and debating and am happy to serve on the IEEE Events Team. ",
+        "desc": "Hi! I’m Rishi Pendyala, a CSE student at IIITD. I have a passion for ideation, planning and debating and am happy to serve on the IEEE Events Team. ",
         "a": "./members/112"
       },
       {
@@ -703,6 +589,102 @@
         },
         "desc": "Hlo guys it's aryan raj here",
         "a": "./members/114"
+      },
+      {
+        "name": "Chahat Ahuja",
+        "pos": "ExeCom",
+        "img": "/people/chahat.jpg",
+        "social": {
+          "fb": "https://www.facebook.com",
+          "tw": "https://x.com",
+          "wb": "#"
+        },
+        "desc": "coords ka option nhi hai upar brooo",
+        "a": "./members/115"
+      },
+      {
+        "name": "Satyam",
+        "pos": "ExeCom",
+        "img": "/people/Satyam_ieee.jpg",
+        "social": {
+          "fb": "https://www.facebook.com",
+          "tw": "https://x.com",
+          "wb": "#"
+        },
+        "desc": "coords ka option nhi hai upar brooo",
+        "a": "./members/115"
+      },
+      {
+        "name": "Yuvraj Verma",
+        "pos": "ExeCom",
+        "img": "/people/Yuvraj Verma.jpg",
+        "social": {
+          "fb": "https://www.facebook.com",
+          "tw": "https://x.com",
+          "wb": "#"
+        },
+        "desc": "Here to make IEEE great again.",
+        "a": "./members/109"
+      },
+      {
+        "name": "Divyansh Mishra",
+        "pos": "ExeCom",
+        "img": "/people/2025/Divyansh Mishra.jpg",
+        "social": {
+          "fb": "https://www.facebook.com",
+          "tw": "https://x.com",
+          "wb": "#"
+        },
+        "desc": "A tech enthusiast turning code into connections fueled by caffeine.",
+        "a": "./members/101"
+      },
+      {
+        "name": "Devesh Roy",
+        "pos": "ExeCom",
+        "img": "/people/2025/Devesh Roy.jpg",
+        "social": {
+          "fb": "https://www.facebook.com",
+          "tw": "https://x.com",
+          "wb": "#"
+        },
+        "desc": "Hi ,I am Devesh from the events team",
+        "a": "./members/98"
+      },
+      {
+        "name": "Anika Aharwal",
+        "pos": "ExeCom",
+        "img": "/people/2025/Anika Aharwal.jpeg",
+        "social": {
+          "fb": "https://www.facebook.com",
+          "tw": "https://x.com",
+          "wb": "#"
+        },
+        "desc": "life is a soup and i'm the form",
+        "a": "./members/99"
+      },
+      {
+        "name": "Abhimanyu Sharma",
+        "pos": "ExeCom",
+        "img": "/people/Abhimanyu Sharma.jpeg",
+        "social": {
+          "fb": "https://www.facebook.com",
+          "tw": "https://x.com",
+          "wb": "#"
+        },
+        "desc": "Ece sophomore at IIITD. Fun to work with, social guy.",
+        "a": "./members/110"
+      },
+      {
+        "name": "Vikas Meena",
+        "pos": "ExeCom",
+        "img": "/people/Vikas Meena.jpg",
+        "social": {
+          "fb": "https://www.facebook.com",
+          "tw": "https://x.com",
+          "wb": "#"
+        },
+        "desc": "I'm Vikas Meena, a second-year CSE student and the PR Lead at IEEE.",
+        "a": "./members/71"
       }
     ]
   },
@@ -965,6 +947,102 @@
         },
         "desc": "lorem",
         "a": "./members/70.html"
+      },
+      {
+        "name": "Chahat Ahuja",
+        "pos": "ExeCom",
+        "img": "/people/chahat.jpg",
+        "social": {
+          "fb": "https://www.facebook.com",
+          "tw": "https://x.com",
+          "wb": "#"
+        },
+        "desc": "coords ka option nhi hai upar brooo",
+        "a": "./members/115"
+      },
+      {
+        "name": "Satyam",
+        "pos": "ExeCom",
+        "img": "/people/Satyam_ieee.jpg",
+        "social": {
+          "fb": "https://www.facebook.com",
+          "tw": "https://x.com",
+          "wb": "#"
+        },
+        "desc": "coords ka option nhi hai upar brooo",
+        "a": "./members/115"
+      },
+      {
+        "name": "Yuvraj Verma",
+        "pos": "ExeCom",
+        "img": "/people/Yuvraj Verma.jpg",
+        "social": {
+          "fb": "https://www.facebook.com",
+          "tw": "https://x.com",
+          "wb": "#"
+        },
+        "desc": "Here to make IEEE great again.",
+        "a": "./members/109"
+      },
+      {
+        "name": "Divyansh Mishra",
+        "pos": "ExeCom",
+        "img": "/people/2025/Divyansh Mishra.jpg",
+        "social": {
+          "fb": "https://www.facebook.com",
+          "tw": "https://x.com",
+          "wb": "#"
+        },
+        "desc": "A tech enthusiast turning code into connections fueled by caffeine.",
+        "a": "./members/101"
+      },
+      {
+        "name": "Devesh Roy",
+        "pos": "ExeCom",
+        "img": "/people/2025/Devesh Roy.jpg",
+        "social": {
+          "fb": "https://www.facebook.com",
+          "tw": "https://x.com",
+          "wb": "#"
+        },
+        "desc": "Hi ,I am Devesh from the events team, currently in second year CSAM .A professional doomscroller ,firm believer in skills over cg(have none).Feel free to reach me out, excited to work with you all .",
+        "a": "./members/98"
+      },
+      {
+        "name": "Anika Aharwal",
+        "pos": "ExeCom",
+        "img": "/people/2025/Anika Aharwal.jpeg",
+        "social": {
+          "fb": "https://www.facebook.com",
+          "tw": "https://x.com",
+          "wb": "#"
+        },
+        "desc": "life is a soup and i’m the form",
+        "a": "./members/99"
+      },
+      {
+        "name": "Abhimanyu Sharma",
+        "pos": "ExeCom",
+        "img": "/people/Abhimanyu Sharma.jpeg",
+        "social": {
+          "fb": "https://www.facebook.com",
+          "tw": "https://x.com",
+          "wb": "#"
+        },
+        "desc": "Ece sophomore at IIITD. Fun to work with, social guy.",
+        "a": "./members/110"
+      },
+      {
+        "name": "Vikas Meena",
+        "pos": "ExeCom",
+        "img": "/people/Vikas Meena.jpg",
+        "social": {
+          "fb": "https://www.facebook.com",
+          "tw": "https://x.com",
+          "wb": "#"
+        },
+        "desc": "I’m Vikas Meena, a second-year Computer Science Engineering (CSE) student and the PR Lead at IEEE. I love connecting with people, organizing events, and working on cool ideas. I’m all about teamwork and making things happen!",
+        "a": "./members/71"
       }
     ]
   }
