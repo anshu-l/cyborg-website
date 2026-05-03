@@ -21,3 +21,4 @@ migration-backups/
 
 # macOS-specific files
 .DS_Store
+.astro/

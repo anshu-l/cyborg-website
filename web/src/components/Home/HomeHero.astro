@@ -6,14 +6,14 @@
     </div>
     <div class="container mx-auto hero-content">
         <div
-            class="flex flex-col max-w-xl md:max-w-none md:flex-row justify-around md:justify-between mx-auto my-14 md:my-18 space-y-10"
+            class="hero-layout flex flex-col max-w-xl md:max-w-none md:flex-row justify-around md:justify-between mx-auto my-14 md:my-18 space-y-10"
         >
-            <div class="flex justify-center flex-col">
+            <div class="hero-copy flex justify-center flex-col">
                 <div class="">
                     <h1
                         class="heading text-5xl md:text-7xl xl:text-8xl font-bold"
                     >
-                        IEEE
+                        CYBORG
                     </h1>
                     <h1
                         class="heading text-5xl md:text-7xl xl:text-8xl font-bold"
@@ -23,29 +23,31 @@
                     <h2
                         class="heading2 text-3xl md:text-4xl font-bold text-gray-500 join"
                     >
-                        student branch
+                        robotics & ai club
                     </h2>
                 </div>
                 <div
                     class="flex flex-row space-x-7 items-center join mt-16 xl:mt-36"
                 >
                     <p class="text-2xl">Join our team</p>
-                    <a href="https://forms.gle/5xoKNbj6moQpRn2o9">
-                        <button
-                            class="fancyBtn applyBtnTop heading2 rounded-lg border-1 px-9 py-3 leading-7 text-xl text-white"
-                        >
-                            apply
-                        </button>
-                    </a>
+                    <button
+                        class="fancyBtn applyBtnTop heading2 rounded-lg border-1 px-9 py-3 leading-7 text-xl text-white"
+                    >
+                        apply
+                    </button>
                 </div>
             </div>
-            <div>
-                <img
-                    src="/hero-img.webp"
-                    alt="home"
-                    class="md:max-w-sm xl:max-w-xl xl:max-h-[633px] rounded-xl"
-                />
-            </div>
+            <aside class="hero-robot-rail" aria-hidden="true">
+                <div class="hero-robot-card">
+                    <div class="hero-robot-frame">
+                        <img
+                            src="/people/cyborg/designforrobot/image%202.png"
+                            alt=""
+                            class="hero-robot-image"
+                        />
+                    </div>
+                </div>
+            </aside>
         </div>
     </div>
 </section>
@@ -60,6 +62,77 @@
     .hero-content {
         position: relative;
         z-index: 3;
+    }
+
+    .hero-layout {
+        align-items: center;
+        gap: 2.5rem;
+    }
+
+    .hero-copy {
+        flex: 0 1 30rem;
+    }
+
+    .hero-visual {
+        flex: 0 1 35rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-robot-rail {
+        flex: 0 0 clamp(150px, 14vw, 210px);
+        display: flex;
+        justify-content: flex-end;
+        align-self: stretch;
+    }
+
+    .hero-robot-card {
+        width: clamp(280px, 26vw, 380px);
+        min-height: clamp(520px, 54vw, 760px);
+        padding: 0.75rem;
+        border-radius: 1.6rem;
+        border: 1px solid color-mix(in srgb, var(--card-border) 90%, white 10%);
+        background:
+            linear-gradient(
+                180deg,
+                color-mix(in srgb, var(--card-bg) 88%, white 12%),
+                color-mix(in srgb, var(--surface-soft) 74%, white 26%)
+            );
+        box-shadow: 0 14px 30px -24px rgba(122, 85, 23, 0.24);
+        margin-left: auto;
+    }
+
+    .hero-robot-frame {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100%;
+        border-radius: 1rem;
+        background:
+            radial-gradient(circle at 50% 18%, color-mix(in srgb, var(--page-spot) 64%, transparent) 0, transparent 58%),
+            linear-gradient(
+                180deg,
+                color-mix(in srgb, var(--surface-soft) 52%, transparent),
+                color-mix(in srgb, var(--card-bg) 92%, transparent)
+            );
+        overflow: hidden;
+    }
+
+    .hero-robot-image {
+        width: clamp(300px, 28vw, 450px);
+        max-width: none;
+        height: auto;
+        object-fit: contain;
+        object-position: center center;
+        opacity: 0.72;
+        filter: drop-shadow(0 10px 16px rgba(122, 85, 23, 0.1));
+        transform: scale(1.6);
+        transform-origin: center center;
+    }
+
+    .hero-main-image {
+        width: 100%;
+        height: auto;
     }
 
     .hero-pattern-overlay {
@@ -83,10 +156,10 @@
         top: 0;
         background: repeating-linear-gradient(
             130deg,
-            rgba(130, 149, 255, 0.24) 0,
-            rgba(130, 149, 255, 0.24) 9px,
-            rgba(130, 149, 255, 0.04) 9px,
-            rgba(130, 149, 255, 0.04) 20px
+            rgba(231, 184, 79, 0.24) 0,
+            rgba(231, 184, 79, 0.24) 9px,
+            rgba(231, 184, 79, 0.04) 9px,
+            rgba(231, 184, 79, 0.04) 20px
         );
         animation: heroPatternSweepA 12s ease-in-out infinite alternate;
     }
@@ -98,10 +171,10 @@
         bottom: 7%;
         background: repeating-linear-gradient(
             -130deg,
-            rgba(120, 236, 205, 0.22) 0,
-            rgba(120, 236, 205, 0.22) 8px,
-            rgba(120, 236, 205, 0.04) 8px,
-            rgba(120, 236, 205, 0.04) 18px
+            rgba(240, 199, 92, 0.22) 0,
+            rgba(240, 199, 92, 0.22) 8px,
+            rgba(240, 199, 92, 0.04) 8px,
+            rgba(240, 199, 92, 0.04) 18px
         );
         animation: heroPatternSweepB 14s ease-in-out infinite alternate;
     }
@@ -110,8 +183,8 @@
         position: absolute;
         inset: 6% 12% 12% 20%;
         background-image:
-            linear-gradient(rgba(117, 140, 255, 0.14) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(117, 140, 255, 0.14) 1px, transparent 1px);
+            linear-gradient(rgba(215, 155, 30, 0.16) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(215, 155, 30, 0.16) 1px, transparent 1px);
         background-size: 36px 36px;
         mask-image: radial-gradient(circle at center, #000 42%, transparent 90%);
         animation: heroGridDrift 16s linear infinite;
@@ -147,6 +220,10 @@
     }
 
     @media (max-width: 768px) {
+        .hero-layout {
+            gap: 1.5rem;
+        }
+
         .hero-pattern-overlay {
             inset: 0;
             opacity: 0.42;
@@ -155,6 +232,23 @@
         .pattern-grid {
             inset: 8% 4% 16% 8%;
             background-size: 28px 28px;
+        }
+
+        .hero-robot-rail {
+            flex: 1 1 auto;
+            width: 100%;
+            justify-content: flex-start;
+            align-self: auto;
+        }
+
+        .hero-robot-card {
+            width: min(100%, 340px);
+            min-height: 420px;
+        }
+
+        .hero-robot-image {
+            width: min(100%, 280px);
+            transform: scale(1.4);
         }
     }
 

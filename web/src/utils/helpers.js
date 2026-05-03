@@ -38,6 +38,14 @@ export async function getSanityContent({ query, variables = {} }) {
   }
 
   const { data } = payload;
+
+  if (data && data.allBlog) {
+    const hiddenBlogs = ["Benefits of IEEE", "IEEE-IIITD Events Report"];
+    data.allBlog = data.allBlog.filter(
+      (blog) => !hiddenBlogs.includes(blog.title)
+    );
+  }
+
   return data;
 }
 

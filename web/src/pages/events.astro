@@ -4,13 +4,16 @@ import EventCard from "../components/Events/EventCard.astro";
 import EventSection from "../components/Events/EventSection.astro";
 
 import { allEvents } from "../lib/api.js";
-import { mergeEventsWithSupplemental } from "../data/supplementalEvents";
+import {
+    mergeEventsWithSupplemental,
+    filterVisibleEvents,
+} from "../data/supplementalEvents";
 import { getSanityContent } from "../utils/helpers";
 
 const response = await getSanityContent({ query: allEvents });
-const eventsData = mergeEventsWithSupplemental(response.allEvent).filter(
-    (event) => event.showDate !== false
-);
+const eventsData = filterVisibleEvents(
+    mergeEventsWithSupplemental(response.allEvent)
+).filter((event) => event.showDate !== false);
 ---
 
 <Layout title="Events">

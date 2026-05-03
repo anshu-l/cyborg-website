@@ -134,7 +134,7 @@ const renderEventReport = (value: any) => {
 const title = blog?.title || "Blog";
 const authorFName = blog?.author?.fName || "";
 const authorLName = blog?.author?.lName || "";
-const authorName = `${authorFName} ${authorLName}`.trim() || "IEEE IIIT Delhi";
+const authorName = `${authorFName} ${authorLName}`.trim() || "Cyborg IIIT Delhi";
 const authorPhotoSrc = blog?.author?.photo?.asset?.url || "/people/avatar.png";
 const authorPhotoAlt = blog?.author?.photo?.alt || authorName;
 const tags = Array.isArray(blog?.tags) ? blog.tags : [];

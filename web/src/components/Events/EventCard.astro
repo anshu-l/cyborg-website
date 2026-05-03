@@ -23,8 +23,8 @@ export interface Props {
 }
 
 const { event } = Astro.props as Props;
-const fallbackPosterUrl = "/events/event-placeholder.svg";
-const posterUrl = event?.eventPoster?.asset?.url || fallbackPosterUrl;
+const fallbackPosterUrl = "/events/123.jpg";
+const posterUrl = "/events/123.jpg";
 const posterAlt = event?.eventPoster?.alt || `${event.eventName} poster`;
 const cardPaddingClass = event.isOpen ? "pb-24" : "";
 ---

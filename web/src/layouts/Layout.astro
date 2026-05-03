@@ -20,29 +20,29 @@ const { title, desc, og, slug } = Astro.props as Props;
 <html lang="en">
   <head>
     <!-- Primary Meta Tags -->
-    <title>{title + " | IEEE-IIIT Delhi"}</title>
-    <meta name="title" content="IEEE-IIIT Delhi" />
+    <title>{title + " | Cyborg"}</title>
+    <meta name="title" content="Cyborg" />
     <meta
       name="description"
       content={desc !== null
         ? desc
-        : "Official IEEE Student Branch of IIIT Delhi"}
+        : "Official Cyborg Club of IIIT Delhi"}
     />
     <meta
       name="keywords"
-      content="IEEE, IEEE IIITD, IEEE-IIIT, IIITD, IIIT Delhi, Compsoc, WIE, Women in Engineering, Slash"
+      content="Cyborg, Cyborg Club, IIITD, IIIT Delhi, Robotics, AI, ML, Data Science"
     />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
-      content={"https://ieee.iiitd.edu.in/" + slug !== null ? slug : ""}
+      content={"https://cyborg.iiitd.edu.in/" + slug !== null ? slug : ""}
     />
-    <meta property="og:title" content="IEEE-IIIT Delhi" />
+    <meta property="og:title" content="Cyborg" />
     <meta
       property="og:description"
-      content="Official IEEE Student Branch of IIIT Delhi"
+      content="Official Cyborg Club of IIIT Delhi"
     />
     <meta property="og:image" content={og !== null ? og : "/hero-img.webp"} />
 
@@ -50,12 +50,12 @@ const { title, desc, og, slug } = Astro.props as Props;
     <meta property="twitter:card" content="summary_large_image" />
     <meta
       property="twitter:url"
-      content={"https://ieee.iiitd.edu.in/" + slug !== null ? slug : ""}
+      content={"https://cyborg.iiitd.edu.in/" + slug !== null ? slug : ""}
     />
-    <meta property="twitter:title" content="IEEE-IIIT Delhi" />
+    <meta property="twitter:title" content="Cyborg" />
     <meta
       property="twitter:description"
-      content="Official IEEE Student Branch of IIIT Delhi"
+      content="Official Cyborg Club of IIIT Delhi"
     />
     <meta
       property="twitter:image"
@@ -77,8 +77,8 @@ const { title, desc, og, slug } = Astro.props as Props;
   <body>
     <div id="first-load-screen" class="first-load-screen" aria-hidden="true">
       <div class="first-load-inner">
-        <img src="/logo.png" alt="IEEE IIIT Delhi" class="first-load-logo" />
-        <p class="heading first-load-title">IEEE IIIT Delhi</p>
+        <img src="/logo.png" alt="Cyborg" class="first-load-logo" />
+        <p class="heading first-load-title">Cyborg</p>
         <div class="first-load-bar"><span></span></div>
       </div>
     </div>
@@ -94,7 +94,7 @@ const { title, desc, og, slug } = Astro.props as Props;
             <div class="flex items-center">
               <a href="/events/" class="heading2 px-4 py-2">events</a>
               <a href="/blogs/" class="heading2 px-4 py-2">blog</a>
-              <a href="/members/" class="heading2 pl-4 py-2">members</a>
+              <a href="/members/" class="heading2 pl-4 py-2">team</a>
               <button
                 id="theme-toggle"
                 type="button"
@@ -117,19 +117,19 @@ const { title, desc, og, slug } = Astro.props as Props;
       <section id="contact" class="footer-bg">
         <div class="container w-11/12 mx-auto">
           <div
-            class="mx-auto flex flex-col md:flex-row gap-10 text-white py-20 justify-around max-w-lg md:max-w-none w-4/5 space-y-5"
+            class="mx-auto flex flex-col md:flex-row gap-10 py-20 justify-around max-w-lg md:max-w-none w-4/5 space-y-5 footer-cta"
           >
             <a
               href="./members#alumni"
               class="memAlum flex flex-col p-7 justify-end items-end text-right rounded-xl"
             >
-              <h1 class="heading text-3xl font-bold">Our Members and Alumni</h1>
+              <h1 class="heading text-3xl font-bold">Our Team and Alumni</h1>
 
               <div
                 class="rounded-full border-1 py-2 px-2 flex justify-center items-center mt-7"
                 style="background: #f8f8f870"
               >
-                <i class="material-icons text-white"> keyboard_arrow_right</i>
+                <i class="material-icons footer-cta-icon"> keyboard_arrow_right</i>
               </div>
             </a>
             <div class="flex flex-col justify-center md:w-1/2">
@@ -142,20 +142,19 @@ const { title, desc, og, slug } = Astro.props as Props;
               <h2
                 class="heading text-2xl md:text-3xl xl:text-4xl font-bold w-full md:w-4/5 mt-3"
               >
-                Become a part of the exclusive community.
+                Become a part of the future of technology.
               </h2>
 
               <h3 class="font-bold mt-6 mb-2">Perks</h3>
               <ul class="text-gray-500">
                 <li class="my-2">
-                  Eligibility for many scholarships, grants and awards.
+                  Hands-on experience with robotics and AI projects.
                 </li>
                 <li class="my-2">
-                  Opportunity to connect with various faculty members.
+                  Access to workshops, hackathons, and tech talks.
                 </li>
                 <li class="my-2">
-                  Interact with many distinguished members from the industry and
-                  academia connected to the club.
+                  Connect with industry experts and research opportunities.
                 </li>
               </ul>
 
@@ -170,23 +169,23 @@ const { title, desc, og, slug } = Astro.props as Props;
         </div>
       </section>
     </main>
-    <footer class="px-8 bg-[#111115]">
+    <footer class="px-8 site-footer">
       <div class="container mx-auto py-14 mb-28">
         <div
-          class="flex flex-col md:flex-row gap-4 md:gap-8 md:justify-between text-white md:mx-auto space-y-5 mx-auto max-w-lg md:max-w-none"
+          class="flex flex-col md:flex-row gap-4 md:gap-8 md:justify-between md:mx-auto space-y-5 mx-auto max-w-lg md:max-w-none footer-shell"
         >
           <div class="flex flex-row gap-4 w-full min-w-fit md:w-1/4 md:mx-auto">
-            <div class="flex pt-4 text-white">
+            <div class="flex pt-4">
               <img src="/logowhite.png" alt="logo" class="footerLogo" />
             </div>
             <div class="flex flex-col md:justify-center">
-              <h1 class="heading text-xl font-bold">IEEE</h1>
+              <h1 class="heading text-xl font-bold">CYBORG</h1>
               <h1 class="heading text-xl font-bold">IIIT Delhi</h1>
-              <h2 class="heading text-md font-bold text-gray-500">
-                student branch
+              <h2 class="heading text-md font-bold footer-muted">
+                robotics & ai club
               </h2>
 
-              <p class="text-sm text-gray-500 mt-3">
+              <p class="text-sm footer-muted mt-3">
                 IIIT Delhi, Okhla Industrial, <br />
                 Phase-III, New Delhi-110020
               </p>
@@ -203,33 +202,9 @@ const { title, desc, og, slug } = Astro.props as Props;
                 <a
                   href="https://iiitd.ac.in/"
                   target="_blank"
-                  class="text-gray-500"
+                  class="footer-muted"
                   ><span class="link link-underline link-underline-black"
                     >IIIT Delhi
-                  </span>
-                </a>
-                <a
-                  href="https://www.ieee.org/"
-                  target="_blank"
-                  class="text-gray-500"
-                  ><span class="link link-underline link-underline-black"
-                    >IEEE
-                  </span>
-                </a>
-                <a
-                  href="https://www.wie.ieee.org/"
-                  target="_blank"
-                  class="text-gray-500"
-                  ><span class="link link-underline link-underline-black"
-                    >WiE
-                  </span>
-                </a>
-                <a
-                  href="https://www.computer.org/"
-                  target="_blank"
-                  class="text-gray-500"
-                  ><span class="link link-underline link-underline-black"
-                    >CompSoc
                   </span>
                 </a>
               </div>
@@ -238,41 +213,41 @@ const { title, desc, og, slug } = Astro.props as Props;
               <h1 class="heading font-bold">Socials</h1>
               <div class="flex flex-wrap md:flex-col md:space-x-0 gap-1">
                 <a
-                  href="https://www.instagram.com/ieeeiiitdelhi/"
+                  href="https://www.instagram.com/cyborg_iiitd/"
                   target="_blank"
-                  class="pr-5 md:pr-0 text-gray-500"
+                  class="pr-5 md:pr-0 footer-muted"
                   ><span class="link link-underline link-underline-black"
                     >Instagram
                   </span>
                 </a>
                 <a
-                  href="https://www.facebook.com/ieeeiiitd/"
+                  href="https://www.facebook.com/cyborgiiitd/"
                   target="_blank"
-                  class="pr-5 md:pr-0 text-gray-500"
+                  class="pr-5 md:pr-0 footer-muted"
                   ><span class="link link-underline link-underline-black"
                     >Facebook
                   </span>
                 </a>
                 <a
-                  href="https://www.linkedin.com/company/ieee-iiitd/"
+                  href="https://www.linkedin.com/company/cyborg-iiitd/"
                   target="_blank"
-                  class="pr-5 md:pr-0 text-gray-500"
+                  class="pr-5 md:pr-0 footer-muted"
                   ><span class="link link-underline link-underline-black"
                     >LinkedIn
                   </span>
                 </a>
                 <a
-                  href="https://www.youtube.com/channel/UCKqQYeZ_yOSWL0BQ7eWUqRA"
+                  href="https://www.youtube.com/@cyborgiiitd"
                   target="_blank"
-                  class="pr-5 md:pr-0 text-gray-500"
+                  class="pr-5 md:pr-0 footer-muted"
                   ><span class="link link-underline link-underline-black"
                     >YouTube
                   </span>
                 </a>
                 <a
-                  href="https://twitter.com/ieee_d/"
+                  href="https://twitter.com/cyborg_iiitd"
                   target="_blank"
-                  class="pr-5 md:pr-0 text-gray-500"
+                  class="pr-5 md:pr-0 footer-muted"
                   ><span class="link link-underline link-underline-black"
                     >Twitter
                   </span>
@@ -282,29 +257,28 @@ const { title, desc, og, slug } = Astro.props as Props;
           </div>
           <div class="flex flex-col w-full md:w-1/5">
             <h1 class="heading font-bold">Contact</h1>
-            <p class="text-gray-500">
-              <a href="mailto:ieee@iiitd.ac.in">ieee@iiitd.ac.in</a>
+            <p class="footer-muted">
+              <a href="mailto:cyborg@iiitd.ac.in">cyborg@iiitd.ac.in</a>
             </p>
 
-            <a
-              href="https://github.com/IEEE-IIIT-Delhi/branding"
-              class="heading font-bold mt-3"
-              ><span class="link link-underline link-underline-black"
-                >Graphic Identity
-              </span>
-            </a>
+            <h1 class="heading font-bold mt-3">Faculty</h1>
+            <p class="footer-muted text-sm">
+              Chanekar Prasad Vilas<br/>
+              Sayan Basu Roy<br/>
+              Sanat Kumar Biswas
+            </p>
           </div>
         </div>
       </div>
       <hr class="border-gray-600 opacity-50 rounded-full mx-auto linejoin" />
       <p class="text-center py-3 pb-5 text-gray-600 opacity-50 heading2">
-        © 2026 | IEEE - IIIT Delhi
+        © 2026 | Cyborg - IIIT Delhi
       </p>
     </footer>
     <script is:inline>
       (() => {
-        const storageKey = "ieee-theme";
-        const firstLoadKey = "ieee-first-load-complete";
+        const storageKey = "cyborg-theme";
+        const firstLoadKey = "cyborg-first-load-complete";
         const root = document.documentElement;
         const media = window.matchMedia("(prefers-color-scheme: dark)");
         const loader = document.getElementById("first-load-screen");
@@ -370,76 +344,76 @@ const { title, desc, og, slug } = Astro.props as Props;
 
       :root {
         color-scheme: light;
-        --page-bg: #f3f5fc;
-        --page-spot: rgba(111, 132, 255, 0.16);
-        --text-main: #17132d;
-        --text-muted: #6c7390;
-        --surface-soft: #eef2fb;
-        --surface-strong: #2b2b35;
-        --surface-footer: #202027;
-        --surface-footer-deep: #111115;
-        --footer-bg-fixed: #202027;
-        --footer-bg-deep-fixed: #111115;
-        --footer-heading-fixed: #f4f6ff;
-        --footer-muted-fixed: #8e96b1;
-        --header-bg: rgba(255, 255, 255, 0.8);
-        --header-border: rgba(17, 21, 45, 0.08);
-        --card-bg: #ffffff;
-        --card-border: rgba(23, 29, 55, 0.08);
-        --card-shadow: 0px 10px 24px -14px rgba(20, 33, 66, 0.35);
-        --pattern-tint: rgba(114, 130, 255, 0.16);
-        --heading-primary: #151c35;
-        --heading-secondary: #4b5a87;
-        --fancy-join-a: #f56c6c;
-        --fancy-join-b: #ee93b4;
-        --fancy-event-a: #6e80ff;
-        --fancy-event-b: #73b0ff;
-        --fancy-members-a: #ca9ffb;
-        --fancy-members-b: #8b9af0;
-        --members-heading-page: #7f4fd3;
-        --blog-heading-page: #2e63d9;
-        --members-gradient-a: rgba(171, 128, 255, 0.22);
-        --members-gradient-b: rgba(127, 213, 255, 0.2);
-        --members-gradient-c: rgba(255, 170, 225, 0.15);
-        --blog-gradient-a: rgba(110, 128, 255, 0.22);
-        --blog-gradient-b: rgba(100, 188, 255, 0.19);
-        --blog-gradient-c: rgba(121, 212, 201, 0.16);
-        --page-pattern-color: rgba(76, 94, 162, 0.08);
+        --page-bg: #fff8db;
+        --page-spot: rgba(243, 202, 90, 0.22);
+        --text-main: #4f3611;
+        --text-muted: #7d6440;
+        --surface-soft: #fff0b8;
+        --surface-strong: #ffe39a;
+        --surface-footer: #f3d275;
+        --surface-footer-deep: #7a5517;
+        --footer-bg-fixed: #f3d275;
+        --footer-bg-deep-fixed: #5c3d0d;
+        --footer-heading-fixed: #4f3611;
+        --footer-muted-fixed: #7a5a25;
+        --header-bg: rgba(255, 255, 255, 0.92);
+        --header-border: rgba(122, 85, 23, 0.1);
+        --card-bg: #fffaf0;
+        --card-border: rgba(122, 85, 23, 0.12);
+        --card-shadow: 0px 12px 28px -16px rgba(122, 85, 23, 0.28);
+        --pattern-tint: rgba(235, 186, 59, 0.2);
+        --heading-primary: #4f3611;
+        --heading-secondary: #8a641f;
+        --fancy-join-a: #e7b84f;
+        --fancy-join-b: #f4d97d;
+        --fancy-event-a: #d79b1e;
+        --fancy-event-b: #f0c75c;
+        --fancy-members-a: #a56a14;
+        --fancy-members-b: #edc04a;
+        --members-heading-page: #8a641f;
+        --blog-heading-page: #b17a1b;
+        --members-gradient-a: rgba(243, 202, 90, 0.26);
+        --members-gradient-b: rgba(255, 236, 170, 0.28);
+        --members-gradient-c: rgba(214, 152, 34, 0.16);
+        --blog-gradient-a: rgba(243, 202, 90, 0.24);
+        --blog-gradient-b: rgba(255, 224, 127, 0.2);
+        --blog-gradient-c: rgba(214, 152, 34, 0.15);
+        --page-pattern-color: rgba(214, 152, 34, 0.1);
       }
 
       :root[data-theme="dark"] {
         color-scheme: dark;
-        --page-bg: #0d1119;
-        --page-spot: rgba(91, 119, 249, 0.2);
-        --text-main: #e7ecff;
-        --text-muted: #a6b0cd;
-        --surface-soft: #131b2a;
-        --surface-strong: #121826;
-        --surface-footer: #0f1521;
-        --surface-footer-deep: #0b1119;
-        --header-bg: rgba(12, 17, 26, 0.76);
-        --header-border: rgba(151, 170, 230, 0.14);
-        --card-bg: #141d2c;
-        --card-border: rgba(157, 177, 240, 0.14);
-        --card-shadow: 0px 12px 30px -16px rgba(3, 7, 18, 0.96);
-        --pattern-tint: rgba(146, 165, 255, 0.2);
-        --heading-primary: #eef2ff;
-        --heading-secondary: #bcc9f3;
-        --fancy-join-a: #ff8f8f;
-        --fancy-join-b: #f7b2cf;
-        --fancy-event-a: #9cb4ff;
-        --fancy-event-b: #7dc9ff;
-        --fancy-members-a: #e4b9ff;
-        --fancy-members-b: #a7b8ff;
-        --members-heading-page: #d8b9ff;
-        --blog-heading-page: #9ec2ff;
-        --members-gradient-a: rgba(157, 119, 244, 0.22);
-        --members-gradient-b: rgba(102, 176, 250, 0.2);
-        --members-gradient-c: rgba(200, 123, 255, 0.16);
-        --blog-gradient-a: rgba(116, 141, 255, 0.22);
-        --blog-gradient-b: rgba(61, 154, 240, 0.2);
-        --blog-gradient-c: rgba(74, 205, 184, 0.17);
-        --page-pattern-color: rgba(155, 176, 242, 0.12);
+        --page-bg: #2f220d;
+        --page-spot: rgba(240, 199, 92, 0.18);
+        --text-main: #f8e5a4;
+        --text-muted: #d3bc7a;
+        --surface-soft: #443015;
+        --surface-strong: #5a3f1a;
+        --surface-footer: #3b280f;
+        --surface-footer-deep: #261907;
+        --header-bg: rgba(47, 34, 13, 0.8);
+        --header-border: rgba(248, 229, 164, 0.12);
+        --card-bg: #443015;
+        --card-border: rgba(248, 229, 164, 0.12);
+        --card-shadow: 0px 12px 30px -16px rgba(0, 0, 0, 0.82);
+        --pattern-tint: rgba(240, 199, 92, 0.2);
+        --heading-primary: #f8e5a4;
+        --heading-secondary: #e3c46d;
+        --fancy-join-a: #f0c75c;
+        --fancy-join-b: #f7dea0;
+        --fancy-event-a: #efc04a;
+        --fancy-event-b: #f7dea0;
+        --fancy-members-a: #f0c75c;
+        --fancy-members-b: #d79b1e;
+        --members-heading-page: #f0c75c;
+        --blog-heading-page: #f0c75c;
+        --members-gradient-a: rgba(240, 199, 92, 0.2);
+        --members-gradient-b: rgba(247, 222, 160, 0.16);
+        --members-gradient-c: rgba(215, 155, 30, 0.12);
+        --blog-gradient-a: rgba(240, 199, 92, 0.2);
+        --blog-gradient-b: rgba(247, 222, 160, 0.14);
+        --blog-gradient-c: rgba(215, 155, 30, 0.12);
+        --page-pattern-color: rgba(240, 199, 92, 0.12);
       }
 
       :root.first-load-active,
@@ -787,15 +761,14 @@ const { title, desc, og, slug } = Astro.props as Props;
       }
 
       .fancyBtn {
-        /* background-image: linear-gradient(to right, #779dff 0.83%, #287fff 99.17%); */
         background-image: linear-gradient(
           to right,
-          #779dff,
-          #287fff,
-          #1d76fa,
-          #5a87fa
+          #d79b1e,
+          #efc04a,
+          #f4d97d,
+          #e7b84f
         );
-        box-shadow: 0 6px 15px 0 #779dff;
+        box-shadow: 0 8px 18px 0 rgba(183, 126, 22, 0.32);
         background-size: 300% 100%;
 
         moz-transition:
@@ -814,7 +787,7 @@ const { title, desc, og, slug } = Astro.props as Props;
 
       .fancyBtn:hover {
         background-position: 100% 0;
-        box-shadow: 0 4px 18px 4px #5987fb;
+        box-shadow: 0 8px 20px 2px rgba(183, 126, 22, 0.38);
 
         moz-transition:
           background 0.4s ease-in-out,
@@ -841,7 +814,7 @@ const { title, desc, og, slug } = Astro.props as Props;
             rgba(238, 147, 180, 0.9) -0.48%,
             rgba(245, 108, 108, 0.9) 100%
           ),
-          url("/ieee_dsc.jpg");
+          url("/hero-img.webp");
       }
 
       .fancyJoin {
@@ -921,8 +894,39 @@ const { title, desc, og, slug } = Astro.props as Props;
       }
 
       .footer-bg {
-        /* background-color: #1e1e28; */
         background: var(--footer-bg-fixed);
+      }
+
+      .footer-cta {
+        color: var(--footer-heading-fixed);
+      }
+
+      .footer-cta .heading {
+        color: var(--footer-heading-fixed);
+      }
+
+      .footer-cta .text-gray-500 {
+        color: var(--footer-muted-fixed);
+      }
+
+      .footer-cta-icon {
+        color: var(--footer-heading-fixed);
+      }
+
+      .site-footer {
+        background: var(--footer-bg-deep-fixed);
+      }
+
+      .footer-shell {
+        color: var(--heading-primary);
+      }
+
+      .footer-shell .heading {
+        color: var(--text-main);
+      }
+
+      .footer-muted {
+        color: var(--footer-muted-fixed);
       }
 
       .footerLogo {
@@ -1121,6 +1125,7 @@ const { title, desc, og, slug } = Astro.props as Props;
           max-width: 896px;
         }
       }
+
     </style>
   </body>
 </html>
